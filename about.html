@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Veloura Élixir</title>
+<style>
+body {
+  margin:0;
+  background:black;
+  color:white;
+  font-family:Arial, sans-serif;
+  overflow:auto; /* Scrollable */
+}
+nav {
+  text-align:center;
+  padding:15px;
+  background:#111;
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index:1000;
+}
+nav a {
+  color:gold;
+  margin:0 20px;
+  text-decoration:none;
+  font-weight:bold;
+}
+h1{text-align:center;color:gold;margin-top:90px;font-size:36px;}
+h2{color:gold;}
+p{line-height:1.8;text-align:justify;}
+#musicControl{
+  position:fixed;
+  top:20px;
+  right:20px;
+  width:50px;
+  height:50px;
+  background:gold;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+  color:black;
+  font-size:20px;
+  cursor:pointer;
+  z-index:1001;
+}
+.aura{
+  position:absolute;
+  top:-50px;
+  left:-50px;
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(255,215,0,0.5) 0%, rgba(255,215,0,0.15) 40%, transparent 70%);
+  filter:blur(35px);
+  animation:glow 3s infinite alternate;
+  z-index:1;
+}
+@keyframes glow{
+  from{opacity:0.6; transform:scale(1);}
+  to{opacity:1; transform:scale(1.1);}
+}
+.particle{
+  position:absolute;
+  width:5px;
+  height:5px;
+  background:gold;
+  border-radius:50%;
+  animation:float 8s infinite ease-in-out;
+}
+@keyframes float{
+  0%{transform:translateY(0) scale(0.5);opacity:1;}
+  100%{transform:translateY(-600px) scale(1);opacity:0;}
+}
+.member{
+  padding:20px;
+  margin:20px;
+  border-bottom:1px solid gold;
+  opacity:0;
+  transform:translateY(30px);
+  animation:fadeIn 1s forwards;
+}
+@keyframes fadeIn{
+  0%{opacity:0; transform:translateY(30px);}
+  100%{opacity:1; transform:translateY(0);}
+}
+footer{text-align:center;padding:15px;background:#111;color:gold;position:relative;z-index:1000;}
+</style>
+</head>
+<body>
+
+<!-- Music -->
+<audio id="bgMusic" src="music.mp3" loop></audio>
+<div id="musicControl">▶</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<h1>Our Team - Qarshi University</h1>
+
+<!-- Aura -->
+<div class="aura"></div>
+
+<!-- Members -->
+
+<div class="member" style="animation-delay:0.2s;">
+<h2>Tehniat</h2>
+<p>
+I was responsible for the creative design and layout of the Veloura Élixir website. I coordinated with the team to decide where each element would appear, including the 3D rotating perfume bottle, golden aura, and floating particles. I worked on visual aspects such as color combinations, typography, spacing, and alignment to give the website a luxurious and professional look. Whenever we had doubts about animation or design choices, Anila guided me with detailed instructions, helping me understand how to make elements smooth, visually appealing, and user-friendly. I also tested layouts on different screen sizes and devices to ensure everything looked perfect everywhere. Throughout the project, I worked closely with other members, sharing ideas, reviewing their work, and helping refine their sections. My contributions ensured that the website maintained a consistent style, elegant design, and interactive elements. The experience taught me how to apply creative ideas professionally, work as part of a team, and incorporate feedback effectively. By the end, I was confident in my ability to design visually rich web pages that combine aesthetics with functionality, making the Veloura Élixir project a polished and distinction-level website.
+</p>
+</div>
+
+<div class="member" style="animation-delay:0.4s;">
+<h2>Sana</h2>
+<p>
+I focused on the front-end structure and CSS styling of the website. My role involved creating semantic HTML for all pages and making sure the layout was clean, accessible, and responsive. I worked on implementing interactive elements such as buttons, forms, and hover effects that matched the luxury theme. While creating the 3D bottle rotation and particle animations, I sometimes struggled to understand how to make the effects smooth and visually consistent. Anila provided guidance whenever I faced challenges, explaining step-by-step how to fix animations and optimize CSS. I also styled the contact form to be elegant and easy to use. Testing the pages on multiple devices helped me ensure that all elements scaled correctly and the user experience remained seamless. Through Anila’s mentorship, I learned to apply advanced CSS techniques effectively, enhancing both the aesthetics and functionality of the site. Overall, I contributed to the polished and professional appearance of the Veloura Élixir project, making it user-friendly and luxurious.
+</p>
+</div>
+
+<div class="member" style="animation-delay:0.6s;">
+<h2>Anila</h2>
+<p>
+I learned advanced web design and luxury branding techniques from Ma’am Faiza at the college level. In this project, my role was central as I guided the team in planning, designing, and implementing all aspects of the website. I suggested the color schemes, typography, animation styles, and overall page layouts. Whenever team members faced difficulties, such as issues with 3D bottle rotation, particle placement, or responsiveness, I provided step-by-step guidance to solve their problems. I reviewed each page, helped refine designs, and ensured that all elements matched the luxury brand image we were creating. I also coordinated discussions to help team members understand technical concepts and design principles. My leadership and mentorship ensured that the project ran smoothly and achieved a distinction-level quality. By combining guidance, creative direction, and hands-on review, I helped the team deliver a cohesive, visually captivating, and professionally polished website that represents Veloura Élixir as a luxury brand.
+</p>
+</div>
+
+<div class="member" style="animation-delay:0.8s;">
+<h2>Xainab</h2>
+<p>
+I worked on interactive design and implementing animations. I focused on creating smooth 3D rotation for the perfume bottle, golden aura behind it, and floating particle effects. At times, I faced challenges in making these animations smooth and visually realistic. Whenever I needed help, Anila guided me step by step, showing me how to adjust rotation speed, layering, and particle movement. I also designed hover effects and interactive buttons, ensuring they matched the overall luxury theme. I tested animations on multiple devices to guarantee that they worked correctly and were visually appealing. Through collaboration and Anila’s mentorship, I successfully implemented interactive elements that enhanced the user experience. My contributions helped the website maintain a consistent, elegant, and professional appearance, making it look luxurious and polished.
+</p>
+</div>
+
+<div class="member" style="animation-delay:1s;">
+<h2>Samra</h2>
+<p>
+I was responsible for animation optimization, visual detailing, and performance testing. I refined particle movement, aura glow, and the 3D perfume bottle rotation to make sure all effects were smooth and elegant. I coordinated with Xainab and Sana to ensure all animations were consistent across pages. Whenever I encountered difficulties understanding how to make animations realistic or smooth, Anila provided guidance, explaining the steps to fix timing, speed, and layering issues. I also tested all interactive elements, ensuring that buttons, forms, and hover effects responded properly. By following Anila’s instructions, I was able to enhance the visual appeal of the website while keeping it performant. My contributions made the Veloura Élixir project a polished, luxury-standard website, combining aesthetics with functionality and interactivity.
+</p>
+</div>
+
+<div class="member" style="animation-delay:1.2s;">
+<h2>Anoushy</h2>
+<p>
+I handled documentation, organization, and final testing of the website. My role included compiling all team contributions, preparing references, and ensuring the content was clear and consistent. I also tested all pages on different devices and browsers to make sure animations, layout, and interactive elements worked correctly. Whenever I faced uncertainty or difficulties with technical details or content placement, Anila guided me with step-by-step explanations. I organized files, images, and scripts, making sure everything was ready for presentation. By applying Anila’s guidance and ensuring all elements were properly structured, I contributed to a cohesive, distinction-level luxury website. My work ensured that the project was not only visually appealing but also professional, organized, and ready to showcase the team’s effort.
+</p>
+</div>
+
+<!-- Floating Particles -->
+<script>
+for(let i=0;i<70;i++){
+  let p=document.createElement("div");
+  p.className="particle";
+  p.style.left=Math.random()*100+"vw";
+  p.style.bottom="0px";
+  p.style.animationDuration=(5+Math.random()*5)+"s";
+  document.body.appendChild(p);
+}
+
+// Music control
+let music=document.getElementById("bgMusic");
+let btn=document.getElementById("musicControl");
+if(sessionStorage.getItem("musicPlaying")==="true"){
+  music.play();
+  btn.textContent="⏸";
+}
+btn.onclick=()=>{
+  if(music.paused){
+    music.play();
+    btn.textContent="⏸";
+    sessionStorage.setItem("musicPlaying","true");
+  }else{
+    music.pause();
+    btn.textContent="▶";
+    sessionStorage.setItem("musicPlaying","false");
+  }
+};
+</script>
+
+<footer>
+© 2026 Veloura Élixir | Project Led & Guided by Anila (learned from Ma’am Faiza) | Qarshi University
+</footer>
+
+</body>
+</html>
