@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | PhysioCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">PhysioCare Dept.</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-box">
+        <h2>Book a Consultation</h2>
+        <form>
+            <label>Patient Name</label>
+            <input type="text" placeholder="Enter full name" required>
+
+            <label>Type of Pain/Issue</label>
+            <select>
+                <option>Back Pain</option>
+                <option>Sports Injury</option>
+                <option>Post-Surgery Rehab</option>
+                <option>General Checkup</option>
+            </select>
+
+            <label>Consultation Mode</label>
+            <div class="radio-group">
+                <input type="radio" name="mode"> In-Person 
+                <input type="radio" name="mode"> Online Video Call
+            </div>
+
+            <label>Message for the Doctor</label>
+            <textarea rows="5" placeholder="Describe your condition..."></textarea>
+
+            <button type="submit" class="btn-submit">Submit Request</button>
+        </form>
+    </div>
+</body>
+</html>
